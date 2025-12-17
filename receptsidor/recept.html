@@ -13,7 +13,9 @@
     <link href="../styles/root.css" rel="stylesheet" />
     <link href="../styles/style_global.css" rel="stylesheet" />
     <!-- <link href="styles/style.css" rel="stylesheet" /> -->
+     <link href="../styles/form_style.css" rel="stylesheet" />
     <link href="../styles/styles_recept.css" rel="stylesheet" />
+
 
     <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet" />
 </head>
@@ -124,9 +126,120 @@
             </article>
         </section>    
         
-
+        <div class="recension">
+            <button class="btn-recension" onClick="document.getElementById('viewModal').showModal()" class="btn-open">
+            Ge oss en recension</button>
+        </div>
 
     </main>
+
+
+
+    <dialog id="viewModal" class="dialog dialog-1">
+        <div class="modal-inner">
+            <div class="modal-header">
+                <button type="button" class="btn-close" 
+                onClick="document.getElementById('viewModal').close()" aria-label="stäng ruta">x</button>
+                <h2>Hjälp oss bli bättre!</h2>
+            </div>
+            <form action="#" method="post" class="review-form">
+                
+                <fieldset>
+                    <legend>Mail:</legend>
+                    <!-- <div class="label-row">
+                    </div> -->
+                    <input id="guest-email" type="email" name="email" autocomplete="email" placeholder="exempel@gmail.com" />
+                </fieldset>
+
+                <div class="besökare">
+                    <fieldset class="fieldset_besökare">
+                        <legend class="legend_span">När besökte ni sidan?</legend>    
+                        <input id="visit-date" type="date" name="visit_date" /> 
+                    </fieldset>   
+
+                    <fieldset class="fieldset_besökare">
+                        <legend class="legend_span">Hur många besökare?</legend>
+                        <div class="fieldset_besökare2">
+                            
+                            <!-- <label for="guests">Hur många besökare?</label> -->
+                            <select id="guests" name="guests">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5+</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <fieldset class="radio-group">
+                    <legend>Är det första gången ni besöker sidan?</legend>
+                    <div>
+                        <input class="radio-option" type="radio" id="visit-no" name="visit_frequency" value="no"/>
+                        <label for="visit-no">Nej, jag har besökt förr</label>
+                    </div>
+                    <div>
+                        <input class="radio-option" type="radio" id="visit-yes" name="visit_frequency" value="no"/>
+                        <label for="visit-no">Ja, det är första besöket</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Hur hittade ni sidan?</legend>
+                    
+                    <div>
+                        <input type="checkbox" name="source" value="Facebook"/>
+                        <label>Facebook</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="source" value="Google"/>
+                        <label>Google</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="source" value="Recommendation"/>
+                        <label>Rekommendation</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Feedback:</legend>
+                    <!-- <label for="comments">Övrigt</label> -->
+                    <textarea id="comments" name="comments" placeholder="Ge oss gärna feedback..." rows="4"></textarea>
+                    <button type="submit" class="btn-primary">Skicka recension</button>
+                </fieldset>
+
+            </form>
+        </div>
+    </dialog>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <footer class="footer">
         <section class="footer__grid">

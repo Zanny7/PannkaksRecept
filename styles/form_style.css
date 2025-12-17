@@ -1,0 +1,140 @@
+
+
+.recension {
+    display:flex;
+    width:100%;
+}
+
+.btn-recension {
+    margin-left: auto;
+}
+
+
+.dialog{
+        width: clamp(160px, 40%, 480px);
+        
+        border: none;
+        box-shadow: var(--box-shadow-1);
+        border-radius: var(--border-radius-1);
+        background-color: var(--color3);
+        color: White;
+
+        position: fixed;      /* position relative to viewport */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+  
+}
+
+.dialog-2 {
+            width:30%;
+        }
+
+.modal-header {
+    display: flex;
+    flex-wrap:wrap;
+    width: 100%;
+    align-content: center;
+
+    & h2 {
+        text-align: center;
+        width:100%;
+        margin-top: 0;
+        
+    }
+
+    & button{
+        margin-left:auto;
+        max-height: 2rem;
+        align-self: center;
+        
+    
+    }
+}
+
+
+
+.slider{
+    display:flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+#rating {
+    width:100%;
+}
+
+#rating-markers{
+    display:flex;
+    width:97%;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    
+    
+    
+    
+    & >option{
+        padding:0;
+    }
+}
+
+
+fieldset {
+    background-color: var(--color2);
+    margin-bottom: 1rem;
+    padding:1rem;
+    display:flex;
+
+    & legend {
+        margin:0 auto;
+
+
+    }
+
+    & > * {
+        margin: 0 auto;
+        
+    }
+
+
+
+    &:last-child {
+        display:flex;
+        flex-direction: column;
+        
+        & >textarea {
+            width: 100%;
+            margin-bottom:0.5rem;
+        }
+
+        & >button {
+            width: 40%;
+            margin:0 auto;
+        }
+    }
+
+   
+}
+
+
+.fieldset_besökare {
+    display:flex;
+    width:50%;
+    margin:0;
+    
+
+    &:nth-child(2){
+        border-left:0;
+        
+       
+    }
+}
+
+.besökare {
+    display:flex;
+    padding:0;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}

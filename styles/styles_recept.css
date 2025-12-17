@@ -9,6 +9,7 @@ main {
     grid-column: span 4;
     justify-items: center;
     color:var(--color-orange);
+
     
     margin: 1rem 0;
 }
@@ -19,7 +20,7 @@ main {
     justify-self: center;
     padding-top:2rem;
     padding-bottom: 5rem;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   /* repeat(auto-fill, 200px) 20%; */
     grid-template-rows: auto 2fr 2fr;
     gap: 2rem;
@@ -35,12 +36,13 @@ main {
     background-color: white;
     border-radius: 1rem;
     grid-row:span 2;
-    
-    & 
 
-    & div>h3,
-    div p {
-        margin:1rem;
+    & div>h3 {
+        margin: 0.5rem 1rem 0 1rem
+    }
+    
+    & div>p {
+        margin: 0 1rem 0.5rem 1rem;
     }
 }
 

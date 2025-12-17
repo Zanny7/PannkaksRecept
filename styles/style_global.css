@@ -40,6 +40,7 @@ nav{
     gap: 2rem;
         
     & a{
+        display:flex;
     box-shadow: inset 0px 10px 20px  rgba(0, 0, 0, 0.342);
     color:var(--color-white);
     background-color: var(--color-bg);
@@ -47,7 +48,7 @@ nav{
     border-radius: 0.3rem;
         
         &:hover{
-        zoom: 110%;
+        scale: 1.2;
         box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.342);
         box-shadow: inset 0px 10px 20px  rgba(59, 58, 58, 0.342); 
         }
@@ -114,7 +115,7 @@ a {
         border-radius: 0.3rem;
         
         &:hover{
-        zoom: 110%;
+        scale: 1.2;
         box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.342); 
         }
         
@@ -162,9 +163,13 @@ iframe {
 
 .footer {
     width: 100%;
+    
+    
+    
 }
 
 .footer__grid{
+    
     box-shadow: inset 0 20px 20px  rgba(0, 0, 0, 0.342);
     
     
@@ -172,7 +177,7 @@ iframe {
     grid-template-columns: repeat(4, 1fr) ;
     grid-template-rows: auto;
     
-    align-items:flex-end;
+    
     padding:2rem;
     color:white;
     
@@ -220,3 +225,28 @@ hr {
 
 
 /* ------------------------FOOTER END--------------------------------- */
+/* ------------------------FORM START--------------------------------- */
+
+/* #form1 {
+    display:flex;
+    flex-direction: column;
+    width:20%;
+    background-color: white;
+    
+} */
+
+.btn-recension {
+    box-shadow: inset 0px 10px 20px  rgba(0, 0, 0, 0.342);
+    color:var(--color-white);
+    background-color: var(--color-bg);
+    padding: 0.3rem 1rem;
+    border-radius: 0.3rem;
+    border:0;
+
+        &:hover{
+        scale: 1.2;
+        box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.342);
+        box-shadow: inset 0px 10px 20px  rgba(59, 58, 58, 0.342); 
+        }
+
+    }

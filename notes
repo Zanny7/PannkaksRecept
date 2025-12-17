@@ -1,0 +1,36 @@
+    <form>
+        <h2>Lämna gärna feedback!</h2>
+        <label for="betyg">Betyg:</label>
+        <input type="text" id="betyg" name="betyg" value=""> 
+        <!-- label (for) and input (name) needs to be set to the same value I think? -->
+
+        <label for="feedback">Lämna gärna feedback:</label>
+        <input type="text" id="feedback" name="feedback" value="">
+
+        <buttton></buttton>
+    </form>
+
+
+
+
+
+
+
+<button onClick="document.getElementById('viewModal').
+showModal()";
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+    Things to add:
+
+    Light/dark theme -->
+  

@@ -22,7 +22,7 @@
 
         <link href="styles/style_global.css" rel="stylesheet" />
 
-    
+        <link href="styles/form_style.css" rel="stylesheet" />
 
         
 
@@ -109,10 +109,15 @@
                 </section>
             </article>
 
-            
+            <div class="recension">
+                <button class="btn-recension" onClick="document.getElementById('viewModal').showModal()" class="btn-open">
+                    
+                Ge oss en recension!</button>
+            </div>
 
             <section class="servering">
                 <h2>Serveringsförslag</h2>
+
                 <div class="servering__images">
                     <img class="image2" src="images/images_index/bild_2.webp" alt="pannkakor på en tallrik" />
                     <img class="image3" src="images/images_index/bild_3.webp" alt="pannkakor på tallrikar" />
@@ -120,6 +125,86 @@
             </section>                
         </div>
     </main> 
+
+    <dialog id="viewModal" class="dialog dialog-2">
+        <div class="modal-inner">
+            <div class="modal-header">
+                <button type="button" class="btn-close" 
+                onClick="document.getElementById('viewModal').close()" aria-label="stäng ruta">x</button>
+                <h2>Hjälp oss bli bättre!</h2>
+            </div>
+            <form action="#" method="post" class="review-form">
+
+                <fieldset class="slider">
+                    <legend>Betygsätt detta recept (0-5) ✨</legend>
+                    <input type="range" id="rating" name="rating" min="1" max="5" step="1" list="rating-markers"/>
+                    
+                    <datalist id="rating-markers">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </datalist>
+                </fieldset>                
+                
+                <fieldset>
+                    <legend>När besökte du sidan?</legend>
+                    <input id="visit-date" type="date" name="visit_date" /> 
+                </fieldset>
+                
+            </form>
+        </div>
+    </dialog>
+
+
+
+<!-- method="" post or get. Get for non-sensitive info,Post for sensitive such as password -->
+    <!-- <form id="form1" action="#" method="post"> 
+        
+        <label for="feedback">Lämna gärna feedback om receptet:</label>
+        <input id="feedback" type="text" name="feedback" value="" />
+
+        <label for="user-email">Mail:</label>
+        <input id="user-email" type="email" name="email" required autocomplete="email" placeholder="exempel@gmail.com"/>
+
+        <label for="betyg">Betyg:</label>
+        <div name="feedback">
+            <label for="radio1">1:</label>
+            <input id="radio1" type="radio" name="radio__button" value="1"/>
+            
+            <label for="radio2">2:</label>
+            <input id="radio2" type="radio" name="radio__button" value="2"/>
+
+            <label for="radio3">3:</label>
+            <input id="radio2" type="radio" name="radio__button" value="2"/>
+
+            <label for="radio4">4:</label>
+            <input id="radio2" type="radio" name="radio__button" value="2"/>
+
+            <label for="radio5">5:</label>
+            <input id="radio2" type="radio" name="radio__button" value="2"/>
+        </div>
+
+        <label for="dept">Avdelning</label>
+        <select id="dept" name="department">
+            <option value="" disabled selected> Välj ett alternativ..</option>
+            <option value="pannkakor">Enkelt recept på pannkakor</option>
+            <option value="carbonara">Enkelt recept på Carbonara</option>
+            <option value="lasagne">Enkelt recept på Lasagne</option>
+            <option value="Pad-Thai">Enkelt recept på Pad-Thai</option>
+        </select>
+        
+        <label for="message">Meddelande</label>
+        <textarea id="message" name="message" row="3"></textarea>
+        <button type="submit" class="">Skicka</button>
+
+    </form> -->
+
+
+
+
+
 
     <footer class="footer" aria-label="sidfot">
         <section class="footer__grid">

@@ -9,7 +9,17 @@
 
 /* used in recept.html */
 
+--box-shadow-1:3px 3px 10px 1px grey;
 
+
+--border-radius-1: 1rem;
+--border-radius-2: 2rem;
+
+
+--color1:hsl(225, 55%, 4%);
+--color2:oklch(0.4 0.0494 264.93);
+
+--color3:oklch(0.2 0.05 265);
 
 
 
