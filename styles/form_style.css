@@ -27,7 +27,11 @@
 }
 
 .dialog-2 {
-            width:30%;
+        width:30%;
+        position: fixed;      /* position relative to viewport */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         }
 
 .modal-header {
