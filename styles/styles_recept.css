@@ -9,9 +9,7 @@ main {
     grid-column: span 4;
     justify-items: center;
     color:var(--color-orange);
-
-    
-    margin: 4rem 0;
+    margin: 3rem 0;
 }
 /* ------------------------------------------------------------------------------------ */
 .gallery{
