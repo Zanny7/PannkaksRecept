@@ -3,35 +3,52 @@
 .recension {
     display:flex;
     width:100%;
+
+    
 }
 
 .btn-recension {
     margin-left: auto;
+    padding: 1rem;
+}
+
+.feedback__button {
+    margin: 0 2rem 2rem auto;
 }
 
 
 .dialog{
-        width: clamp(160px, 40%, 480px);
+        width: clamp(100px, 35%, 480px);
+        
         
         border: none;
         box-shadow: var(--box-shadow-1);
         border-radius: var(--border-radius-1);
-        background-color: var(--color3);
+        /* background-color: var(--color3); */
+        background-color: var(--color-bg);
         color: White;
 
         position: fixed;      /* position relative to viewport */
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        
+       &::backdrop {
+            background-color:rgba(55,55,55,.6);
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
+        }
   
 }
 
 .dialog-2 {
-        width:30%;
+        
         position: fixed;      /* position relative to viewport */
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        margin:0;
+
         }
 
 .modal-header {
@@ -43,7 +60,7 @@
     & h2 {
         text-align: center;
         width:100%;
-        margin-top: 0;
+        margin: 1rem 0;
         
     }
 
@@ -86,7 +103,8 @@
 
 
 fieldset {
-    background-color: var(--color2);
+    /* background-color: var(--color2); */
+    background-color: var(--color-bg);
     margin-bottom: 1rem;
     padding:1rem;
     display:flex;
@@ -142,3 +160,4 @@ fieldset {
     margin-bottom: 1rem;
     margin-top: 1rem;
 }
+

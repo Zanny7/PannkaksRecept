@@ -134,7 +134,8 @@
                 onClick="document.getElementById('viewModal').close()" aria-label="stäng ruta">x</button>
                 <h2>Hjälp oss bli bättre!</h2>
             </div>
-            <form action="#" method="post" class="review-form">
+            <form action="https://formspree.io/f/mdannjzp" method="post" class="review-form">
+
 
                 <fieldset class="slider">
                     <legend>Betygsätt detta recept (0-5) ✨</legend>
@@ -152,6 +153,13 @@
                 <fieldset>
                     <legend>När besökte du sidan?</legend>
                     <input id="visit-date" type="date" name="visit_date" /> 
+                </fieldset>
+
+                <fieldset>
+                    <legend for="comments">Feedback:</legend>
+                    <!-- <label for="comments">Övrigt</label> -->
+                    <textarea id="comments" name="comments" placeholder="Ge oss gärna feedback..." rows="4"></textarea>
+                    <button type="submit" class="btn-primary">Skicka recension</button>
                 </fieldset>
                 
             </form>
