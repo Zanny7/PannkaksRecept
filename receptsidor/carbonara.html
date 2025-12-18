@@ -30,13 +30,11 @@
 
 
 <body>
-
-        <!-- the body contains the content that is viewed on the webpage-->
     <header class="navigation_bar"> 
-        <nav>
+        <nav aria-label="Huvudmeny">
             <ul class="nav_ul">
-                <li class="nav_li_margin-left"><a href="../index.html">Logo</a></li>
-
+                <li class="nav_li_margin-left"><a class="a-logo" role="button" aria-label="Gå till Startsidan" href="../index.html" >
+                <img class="logo" src="../images/images_global/infinity.png" alt=""> </a></li>
                 
                     <li class="hideOnMobile"><a href="../receptsidor/recept.html">Recept</a></li>
                     <li class="hideOnMobile"><a href="">Om oss</a></li>
@@ -61,25 +59,27 @@
             </ul>
         </nav>
     </header>
+        <!-- the body contains the content that is viewed on the webpage-->
+
     
-    <main class="padding_1">
-        <div class="div_main">
-            <header>
+    <main class="recipe-page">
+        <div class="recipe-page__content">
+            <header class="recipe-page">
                 <iframe src="https://www.youtube.com/embed/ecbdrobmsHw" alt="Youtube-preview på pannkakor med sylt och grädde, samt länk till en youtubevideo med ett recept på pannkakor."> </iframe>
                 <!-- <img class="image1" src="images/bild_1.webp" alt="pannkakor med grädde och hallon" /> -->
             </header>
 
-            <article>
-                <header>
-                    <h1>Enkelt recept på Carbonara</h1>
+            <article class="recipe">
+                <header class="recipe__header">
+                    <h1 clsss="recipe__title">Enkelt recept på Carbonara</h1>
                         <!-- header #1 the main header, large bold text --> 
                 
-                    <section class="box1">
-                        Gör traditionell carbonara med detta recept. Max 20 minuter!
+                    <section class="recipe__section">
+                        <p>Gör traditionell carbonara med detta recept. Max 20 minuter!</p>
                     </section>
                 </header>
 
-                <section>
+                <section class="recipe__ingredients">
                     <h2>Ingredienser</h2>
                         <!-- header #2 slightly smaller than header #1-->
 

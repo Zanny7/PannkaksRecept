@@ -29,7 +29,8 @@ h1 {
         /* sets the color of the text */        
 }
 
-ul, ol {
+article ul,
+article ol {
     line-height: 2;
         /* sets the distance between each row */
 }
