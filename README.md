@@ -27,17 +27,25 @@ Completed as a portfolio learning project. The implemented recipe and feedback e
 
 ## 📸 Preview
 
-### Recipe gallery
+### Recipe video
 
-![Recipe gallery showing pancake, carbonara, lasagne, and pad thai recipe cards](docs/images/recipe-gallery.png)
+![Pancake recipe page with an embedded Filip Poon cooking video](docs/images/01-pancake-recipe-video.png)
 
-### Recipe and video
+### Recipe details
 
-![Pancake recipe page with an embedded Filip Poon cooking video](docs/images/pancake-recipe-video.png)
+![Pancake recipe showing its ingredients and step-by-step instructions](docs/images/02-pancake-recipe-details.png)
+
+### Serving suggestions
+
+![Two serving suggestions featuring thin pancakes with different toppings](docs/images/03-pancake-serving-suggestions.png)
 
 ### Review dialog
 
-![Recipe feedback dialog with rating, visit date, and comment fields](docs/images/recipe-review-dialog.png)
+![Recipe feedback dialog with rating, visit date, and comment fields](docs/images/04-recipe-review-dialog.png)
+
+### Recipe gallery
+
+![Recipe gallery showing pancake, carbonara, lasagne, and pad thai recipe cards](docs/images/05-recipe-gallery.png)
 
 ---
 
